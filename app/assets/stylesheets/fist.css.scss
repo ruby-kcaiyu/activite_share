@@ -1,0 +1,19 @@
+@import "bootstrap";
+body{
+	background:#edf0f5;
+	color:#20396D;
+	padding-top:60px;
+}
+input, textarea, select, .uneditable-input {
+	border: 1px solid #bbb;
+	margin-bottom: 4px;
+}
+p{
+	margin-top:80px;
+}
+.header{
+	margin-top:-60px;
+	padding-top:20px;
+	padding-bottom:20px;
+	background:rgb(117, 117, 156);
+}

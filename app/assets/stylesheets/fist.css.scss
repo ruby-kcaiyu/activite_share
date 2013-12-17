@@ -1,4 +1,9 @@
 @import "bootstrap";
+
+//	background:rgb(117, 117, 156);
+// margin-top:-60px;
+// padding-top:20px;
+ // padding-bottom:20px;
 body{
 	background:#edf0f5;
 	color:#20396D;
@@ -15,5 +20,15 @@ p{
 	margin-top:-60px;
 	padding-top:20px;
 	padding-bottom:20px;
-	background:rgb(117, 117, 156);
+	color:rgb(241, 238, 238) ;
+	background:asset_url('cdu.jpg');
+	background-position:bottom;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#content{
+	background:#edf0f5;
 }

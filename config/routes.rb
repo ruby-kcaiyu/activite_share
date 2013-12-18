@@ -4,7 +4,7 @@ First::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-  devise_for :users
+
   devise_scope :user do
     authenticated :user do
     	root :to => 'users#index', as: :authenticated_root
@@ -13,6 +13,14 @@ First::Application.routes.draw do
 	root :to => 'devise/registrations#new', as: :unauthenticated_root
     end
   end
+  scope 'settings' do
+    resource :profile, :only=>[:show,:update]
+    as :user do
+      get 'account'=>'devise/registrations#edit',:as=>'account'
+    end
+  end
+
+  devise_for :users
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

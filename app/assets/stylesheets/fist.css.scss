@@ -10,7 +10,7 @@ body{
 	padding-top:60px;
 }
 input, textarea, select, .uneditable-input {
-	border: 1px solid #bbb;
+	border: 2px solid #bbb;
 	margin-bottom: 4px;
 }
 p{
@@ -19,16 +19,24 @@ p{
 .header{
 	margin-top:-60px;
 	padding-top:20px;
+	padding-left:40px;
 	padding-bottom:20px;
-	color:rgb(241, 238, 238) ;
+	color:white ;
 	background:asset_url('cdu.jpg');
-	background-position:bottom;
 	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	background-size: 100% 100%;
 }
 #content{
 	background:#edf0f5;
+}
+#error_explanation{
+	color:#f00;
+	h2{
+		font-size:20px;
+		background:#D1C8C8;
+		padding-left:20px;
+	}
+	ul {
+	margin:0 0 8px 0;
+	}
 }
